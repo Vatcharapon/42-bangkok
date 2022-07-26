@@ -1,9 +1,4 @@
-/**
-* Template Name: Laura - v4.8.1
-* Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -223,6 +218,10 @@ h6 {
 
   .navbar ul {
     display: none;
+  }
+  .img-42-bangkok{
+  display: flex;
+  justify-content: center;
   }
 }
 
@@ -623,6 +622,11 @@ section {
   background-size: cover;
   min-height: 500px;
 }
+.about-yai .image {
+  background: url("../img/yai.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
 .about-palm .image {
   background: url("../img/palm.jpg") center center no-repeat;
   background-size: cover;
@@ -890,14 +894,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# My gallery
+# My portfolio
 --------------------------------------------------------------*/
-.gallery #gallery-flters {
+.portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
 }
 
-.gallery #gallery-flters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   margin: 0 10px 10px 10px;
@@ -911,25 +915,25 @@ section {
   border: 2px solid #fff;
 }
 
-.gallery #gallery-flters li:hover,
-.gallery #gallery-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #f3a200;
   border-color: #ffb727;
 }
 
-.gallery .gallery-item {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
-.gallery .gallery-item .gallery-img {
+.portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
 }
 
-.gallery .gallery-item .gallery-img img {
+.portfolio .portfolio-item .portfolio-img img {
   transition: all 0.8s ease-in-out;
 }
 
-.gallery .gallery-item .gallery-info {
+.portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
   left: 15px;
@@ -941,7 +945,7 @@ section {
   padding: 10px 15px;
 }
 
-.gallery .gallery-item .gallery-info h4 {
+.portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
@@ -949,14 +953,14 @@ section {
   margin-bottom: 0px;
 }
 
-.gallery .gallery-item .gallery-info p {
+.portfolio .portfolio-item .portfolio-info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.gallery .gallery-item .gallery-info .preview-link,
-.gallery .gallery-item .gallery-info .details-link {
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -965,40 +969,40 @@ section {
   transition: 0.3s;
 }
 
-.gallery .gallery-item .gallery-info .preview-link:hover,
-.gallery .gallery-item .gallery-info .details-link:hover {
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #ffc041;
 }
 
-.gallery .gallery-item .gallery-info .details-link {
+.portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
 }
 
-.gallery .gallery-item:hover .gallery-img img {
+.portfolio .portfolio-item:hover .portfolio-img img {
   transform: scale(1.2);
 }
 
-.gallery .gallery-item:hover .gallery-info {
+.portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
 }
 
 /*--------------------------------------------------------------
-# gallery Details
+# portfolio Details
 --------------------------------------------------------------*/
-.gallery-details {
+.portfolio-details {
   padding-top: 40px;
 }
 
-.gallery-details .gallery-details-slider img {
+.portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
 
-.gallery-details .gallery-details-slider .swiper-pagination {
+.portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.gallery-details .gallery-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1006,16 +1010,16 @@ section {
   border: 1px solid #ffb727;
 }
 
-.gallery-details .gallery-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffb727;
 }
 
-.gallery-details .gallery-info {
+.portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(59, 67, 74, 0.08);
 }
 
-.gallery-details .gallery-info h3 {
+.portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1023,143 +1027,39 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.gallery-details .gallery-info ul {
+.portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.gallery-details .gallery-info ul li+li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
-.gallery-details .gallery-description {
+.portfolio-details .portfolio-description {
   padding-top: 30px;
 }
 
-.gallery-details .gallery-description h2 {
+.portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.gallery-details .gallery-description p {
+.portfolio-details .portfolio-description p {
   padding: 0;
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
 
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #ffb727;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -12px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #ffb727;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #ffb727;
-  display: inline-block;
-  padding: 8px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #ffc85a;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #ffb727;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #ffb727;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
+.img-contact{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
