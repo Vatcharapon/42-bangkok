@@ -347,7 +347,7 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #fff;
 }
 
@@ -625,6 +625,11 @@ section {
 }
 .about-palm .image {
   background: url("../img/palm.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+.about-nueng .image {
+  background: url("../img/nueng.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
